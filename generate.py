@@ -17,9 +17,9 @@ with open('/Users/user/Downloads/PIETRA CAPRI.jpg', 'rb') as f:
 with open('/Users/user/Downloads/photo_2026-05-05 16.42.24.jpeg', 'rb') as f:
     img_innovation_orange = 'data:image/jpeg;base64,' + base64.b64encode(f.read()).decode('ascii')
 
-with open('/Users/user/Downloads/2 (51).jpg', 'rb') as f:
+with open('/Users/user/Downloads/walnut.webp', 'rb') as f:
     _walnut_b64 = base64.b64encode(f.read()).decode('ascii')
-WALNUT_TEX_URI = 'data:image/jpeg;base64,' + _walnut_b64
+WALNUT_TEX_URI = 'data:image/webp;base64,' + _walnut_b64
 
 products = [
     # Stone Look
