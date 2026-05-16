@@ -231,7 +231,7 @@ T = {
         "nav_tag": "Официальный дистрибьютор · КР",
         "hero_eyebrow": "Kalesinterflex · Официальный дистрибьютор в Кыргызстане",
         "hero_h1": "Архитектурные<br>поверхности<br><em>нового поколения</em>",
-        "hero_sub": "Тончайшие керамические фасадные плиты 1000×3000 мм при толщине от 3 мм. Для смелых архитектурных решений.",
+        "hero_sub": "Фасадные панели Kalesinterflex в Бишкеке — тончайшие керамические плиты 1000×3000 мм, толщина от 3 мм. Для смелых архитектурных решений.",
         "hero_cta1": "Смотреть коллекции ↓",
         "hero_cta2": "О материале",
         "stat1_n": "3–5 мм",
@@ -1280,8 +1280,61 @@ html = f'''<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="page_title">NTEK — Официальный дистрибьютор Kalesinterflex в Кыргызстане</title>
+<meta name="description" content="NTEK — официальный дистрибьютор Kalesinterflex в Кыргызстане. Фасадные панели в Бишкеке: консультация, расчёт, доставка. ☎ +996 777 420 000">
+<link rel="canonical" href="https://niyazssales.github.io/ntek-kalesinterflex/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://niyazssales.github.io/ntek-kalesinterflex/">
+<meta property="og:title" content="NTEK — Официальный дистрибьютор Kalesinterflex в Кыргызстане">
+<meta property="og:description" content="Фасадные панели Kalesinterflex в Бишкеке. Тончайшие керамические плиты 1000×3000 мм. Консультация, расчёт и доставка по Кыргызстану.">
+<meta property="og:locale" content="ru_KG">
+<meta property="og:site_name" content="NTEK Kalesinterflex">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NTEK — Официальный дистрибьютор Kalesinterflex в Кыргызстане">
+<meta name="twitter:description" content="Фасадные панели Kalesinterflex в Бишкеке. Тончайшие керамические плиты 1000×3000 мм.">
+<meta name="geo.region" content="KG">
+<meta name="geo.placename" content="Bishkek, Kyrgyzstan">
+<link rel="alternate" hreflang="ru" href="https://niyazssales.github.io/ntek-kalesinterflex/">
+<link rel="alternate" hreflang="x-default" href="https://niyazssales.github.io/ntek-kalesinterflex/">
+<script type="application/ld+json">
+{{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "NTEK",
+  "description": "Официальный дистрибьютор Kalesinterflex в Кыргызстане. Архитектурные фасадные панели в Бишкеке.",
+  "url": "https://niyazssales.github.io/ntek-kalesinterflex/",
+  "telephone": ["+996556442207", "+996777420000"],
+  "address": {{
+    "@type": "PostalAddress",
+    "streetAddress": "Исанова 119",
+    "addressLocality": "Бишкек",
+    "addressCountry": "KG"
+  }},
+  "geo": {{
+    "@type": "GeoCoordinates",
+    "latitude": 42.87945,
+    "longitude": 74.592188
+  }},
+  "sameAs": [
+    "https://instagram.com/ntek.facade",
+    "https://2gis.kg/bishkek/firm/70000001019341726"
+  ],
+  "contactPoint": [
+    {{
+      "@type": "ContactPoint",
+      "telephone": "+996-777-420-000",
+      "contactType": "sales"
+    }},
+    {{
+      "@type": "ContactPoint",
+      "telephone": "+996-556-442-207",
+      "contactType": "customer service"
+    }}
+  ]
+}}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.kale.com.tr">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{{box-sizing:border-box;margin:0;padding:0}}
@@ -1405,15 +1458,15 @@ nav{{
 /* CONTACTS */
 .contacts{{padding:96px 5%;background:var(--surface)}}
 .contacts-inner{{max-width:1440px;margin:0 auto}}
-.contacts-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-top:56px}}
-.contact-card{{background:var(--bg);border:1px solid var(--border);padding:28px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:16px}}
-.contact-card-body{{display:flex;flex-direction:column;gap:8px;min-width:0}}
-.contact-card-icon{{font-size:24px;line-height:1;margin-bottom:2px;display:flex;align-items:center}}
-.contact-card-label{{font-size:9.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}}
-.contact-card-value{{font-size:15px;font-weight:600;color:var(--dark);line-height:1.4;text-decoration:none}}
+.contacts-grid{{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px}}
+.contact-card{{background:var(--bg);border:1px solid var(--border);padding:28px 24px;display:flex;flex-direction:column;gap:0}}
+.contact-card-body{{display:flex;flex-direction:column;gap:6px;flex:1}}
+.contact-card-icon{{font-size:24px;line-height:1;margin-bottom:10px;display:flex;align-items:center}}
+.contact-card-label{{font-size:9.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);white-space:nowrap}}
+.contact-card-value{{font-size:16px;font-weight:600;color:var(--dark);line-height:1.3;text-decoration:none;white-space:nowrap}}
 a.contact-card-value:hover{{color:var(--accent)}}
 .contact-card-sub{{font-size:12px;color:var(--mid)}}
-.contact-btn{{flex-shrink:0;padding:10px 16px;border:1.5px solid var(--accent);background:transparent;color:var(--accent);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-radius:4px;transition:background .18s,color .18s;cursor:pointer;white-space:nowrap}}
+.contact-btn{{align-self:flex-start;margin-top:20px;padding:9px 16px;border:1.5px solid var(--accent);background:transparent;color:var(--accent);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-radius:4px;transition:background .18s,color .18s;cursor:pointer;white-space:nowrap}}
 .contact-btn:hover{{background:var(--accent);color:#fff}}
 
 /* FOOTER */

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://niyazssales.github.io/ntek-kalesinterflex/sitemap.xml
