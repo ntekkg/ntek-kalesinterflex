@@ -240,11 +240,11 @@ T = {
         "stat2_l": "Самый лёгкий материал",
         "stat3_n": "100×300 / 120×360",
         "stat3_l": "Форматы плит, см",
-        "stat4_n": "A1",
+        "stat4_n": "НГ",
         "stat4_l": "Класс огнестойкости",
         "strip1_t": "Фасады и интерьеры",
         "strip1_s": "Универсальное применение",
-        "strip2_t": "Негорючий, класс A1",
+        "strip2_t": "Негорючий, класс НГ",
         "strip2_s": "Абсолютная пожаробезопасность",
         "strip3_t": "Гибкость и обработка",
         "strip3_s": "Радиус изгиба от 5.5 м",
@@ -260,7 +260,7 @@ T = {
         "spec2_k": "Толщина для фасадов",
         "spec3_v": "7 кг/м²",
         "spec3_k": "Вес при толщине 3 мм",
-        "spec4_v": "A1",
+        "spec4_v": "НГ",
         "spec4_k": "Класс пожарной безопасности",
         "cat_lbl": "Каталог 2024",
         "cat_h2": "Коллекции Kalesinterflex",
@@ -278,13 +278,17 @@ T = {
         "contacts_sub": "Официальный дистрибьютор Kalesinterflex в Кыргызстане. Консультация по материалам, расчёт и доставка.",
         "c_wa_label": "WhatsApp",
         "c_wa_sub": "Написать в WhatsApp",
+        "c_wa_btn": "Написать нам",
         "c_ph_label": "Телефон",
         "c_ph_sub": "Звонки",
+        "c_ph_btn": "Позвоните нам",
         "c_ig_label": "Instagram",
         "c_ig_sub": "Проекты и новинки",
+        "c_ig_btn": "Подписаться",
         "c_addr_label": "Адрес офиса",
         "c_addr_val": "Исанова 119",
         "c_addr_sub": "Бишкек, Кыргызстан",
+        "c_addr_btn": "Проложить маршрут",
         "ft_desc": "NTEK — официальный дистрибьютор Kalesinterflex в Кыргызстане. Поставки материала для архитектурных, дизайнерских и строительных проектов.",
         "ft_nav_h": "Навигация",
         "ft_home": "Главная",
@@ -375,11 +379,11 @@ T = {
         "stat2_l": "Lightest Material",
         "stat3_n": "100×300 / 120×360",
         "stat3_l": "Slab Formats, cm",
-        "stat4_n": "A1",
+        "stat4_n": "НГ",
         "stat4_l": "Fire Resistance Class",
         "strip1_t": "Facades & Interiors",
         "strip1_s": "Universal Application",
-        "strip2_t": "Non-Combustible, Class A1",
+        "strip2_t": "Non-Combustible, Class НГ",
         "strip2_s": "Absolute Fire Safety",
         "strip3_t": "Flexibility & Processing",
         "strip3_s": "Bending Radius from 5.5 m",
@@ -395,7 +399,7 @@ T = {
         "spec2_k": "Facade Thickness",
         "spec3_v": "7 kg/m²",
         "spec3_k": "Weight at 3 mm",
-        "spec4_v": "A1",
+        "spec4_v": "НГ",
         "spec4_k": "Fire Safety Class",
         "cat_lbl": "Catalogue 2024",
         "cat_h2": "Kalesinterflex Collections",
@@ -413,13 +417,17 @@ T = {
         "contacts_sub": "Official Kalesinterflex distributor in Kyrgyzstan. Material consultation, quotation, and delivery.",
         "c_wa_label": "WhatsApp",
         "c_wa_sub": "Message via WhatsApp",
+        "c_wa_btn": "Message Us",
         "c_ph_label": "Phone",
         "c_ph_sub": "Calls",
+        "c_ph_btn": "Call Us",
         "c_ig_label": "Instagram",
         "c_ig_sub": "Projects & New Arrivals",
+        "c_ig_btn": "Follow Us",
         "c_addr_label": "Office Address",
         "c_addr_val": "Isanova 119",
         "c_addr_sub": "Bishkek, Kyrgyzstan",
+        "c_addr_btn": "Get Directions",
         "ft_desc": "NTEK — official Kalesinterflex distributor in Kyrgyzstan. Supply of material for architectural, design, and construction projects.",
         "ft_nav_h": "Navigation",
         "ft_home": "Home",
@@ -510,11 +518,11 @@ T = {
         "stat2_l": "Эң жеңил материал",
         "stat3_n": "100×300 / 120×360",
         "stat3_l": "Плита форматтары, см",
-        "stat4_n": "A1",
+        "stat4_n": "НГ",
         "stat4_l": "Өрткө туруктуулук классы",
         "strip1_t": "Фасад жана интерьер",
         "strip1_s": "Универсалдуу колдонуу",
-        "strip2_t": "Жанбайт, A1 классы",
+        "strip2_t": "Жанбайт, НГ классы",
         "strip2_s": "Абсолюттук өрт коопсуздугу",
         "strip3_t": "Ийкемдүүлүк жана иштетүү",
         "strip3_s": "Ийилүү радиусу 5.5 мден",
@@ -530,7 +538,7 @@ T = {
         "spec2_k": "Фасад үчүн калыңдык",
         "spec3_v": "7 кг/м²",
         "spec3_k": "3 мм калыңдыктагы салмак",
-        "spec4_v": "A1",
+        "spec4_v": "НГ",
         "spec4_k": "Өрт коопсуздугу классы",
         "cat_lbl": "2024 Каталогу",
         "cat_h2": "Kalesinterflex Коллекциялары",
@@ -548,13 +556,17 @@ T = {
         "contacts_sub": "Кыргызстандагы Kalesinterflex расмий дистрибьютору. Материалдар боюнча кеңешүү, эсептөө жана жеткирүү.",
         "c_wa_label": "WhatsApp",
         "c_wa_sub": "WhatsApp аркылуу жазуу",
+        "c_wa_btn": "Жазуу",
         "c_ph_label": "Телефон",
         "c_ph_sub": "Чалуулар",
+        "c_ph_btn": "Чалуу",
         "c_ig_label": "Instagram",
         "c_ig_sub": "Долбоорлор жана жаңылыктар",
+        "c_ig_btn": "Жазылуу",
         "c_addr_label": "Офис дареги",
         "c_addr_val": "Исанова 119",
         "c_addr_sub": "Бишкек, Кыргызстан",
+        "c_addr_btn": "Маршрут",
         "ft_desc": "NTEK — Кыргызстандагы Kalesinterflex расмий дистрибьютору. Архитектуралык, дизайнердик жана курулуш долбоорлору үчүн материал жеткирүү.",
         "ft_nav_h": "Навигация",
         "ft_home": "Башкы бет",
@@ -1394,12 +1406,15 @@ nav{{
 .contacts{{padding:96px 5%;background:var(--surface)}}
 .contacts-inner{{max-width:1440px;margin:0 auto}}
 .contacts-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-top:56px}}
-.contact-card{{background:var(--bg);border:1px solid var(--border);padding:32px 28px;display:flex;flex-direction:column;gap:10px}}
-.contact-card-icon{{font-size:24px;line-height:1;margin-bottom:4px;display:flex;align-items:center}}
+.contact-card{{background:var(--bg);border:1px solid var(--border);padding:28px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:16px}}
+.contact-card-body{{display:flex;flex-direction:column;gap:8px;min-width:0}}
+.contact-card-icon{{font-size:24px;line-height:1;margin-bottom:2px;display:flex;align-items:center}}
 .contact-card-label{{font-size:9.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}}
 .contact-card-value{{font-size:15px;font-weight:600;color:var(--dark);line-height:1.4;text-decoration:none}}
 a.contact-card-value:hover{{color:var(--accent)}}
 .contact-card-sub{{font-size:12px;color:var(--mid)}}
+.contact-btn{{flex-shrink:0;padding:10px 16px;border:1.5px solid var(--accent);background:transparent;color:var(--accent);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-radius:4px;transition:background .18s,color .18s;cursor:pointer;white-space:nowrap}}
+.contact-btn:hover{{background:var(--accent);color:#fff}}
 
 /* FOOTER */
 footer{{background:var(--dark);padding:72px 5% 36px}}
@@ -1760,28 +1775,40 @@ footer{{background:var(--dark);padding:72px 5% 36px}}
     </div>
     <div class="contacts-grid fi">
       <div class="contact-card">
-        <div class="contact-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></div>
-        <div class="contact-card-label" data-i18n="c_wa_label">WhatsApp</div>
-        <a href="https://wa.me/996556442207" target="_blank" class="contact-card-value">+996 556 442 207</a>
-        <div class="contact-card-sub" data-i18n="c_wa_sub">Написать в WhatsApp</div>
+        <div class="contact-card-body">
+          <div class="contact-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></div>
+          <div class="contact-card-label" data-i18n="c_wa_label">WhatsApp</div>
+          <a href="https://wa.me/996556442207" target="_blank" class="contact-card-value">+996 556 442 207</a>
+          <div class="contact-card-sub" data-i18n="c_wa_sub">Написать в WhatsApp</div>
+        </div>
+        <a href="https://wa.me/996556442207" target="_blank" class="contact-btn" data-i18n="c_wa_btn">Написать нам</a>
       </div>
       <div class="contact-card">
-        <div class="contact-card-icon">📞</div>
-        <div class="contact-card-label" data-i18n="c_ph_label">Телефон</div>
-        <a href="tel:+996777420000" class="contact-card-value">+996 777 420 000</a>
-        <div class="contact-card-sub" data-i18n="c_ph_sub">Звонки</div>
+        <div class="contact-card-body">
+          <div class="contact-card-icon">📞</div>
+          <div class="contact-card-label" data-i18n="c_ph_label">Телефон</div>
+          <a href="tel:+996777420000" class="contact-card-value">+996 777 420 000</a>
+          <div class="contact-card-sub" data-i18n="c_ph_sub">Звонки</div>
+        </div>
+        <a href="tel:+996777420000" class="contact-btn" data-i18n="c_ph_btn">Позвоните нам</a>
       </div>
       <div class="contact-card">
-        <div class="contact-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><defs><radialGradient id="ig-rg" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect x="1.5" y="1.5" width="21" height="21" rx="6" ry="6" fill="url(#ig-rg)"/><circle cx="12" cy="12" r="5.2" fill="none" stroke="white" stroke-width="1.8"/><circle cx="17.8" cy="6.2" r="1.3" fill="white"/></svg></div>
-        <div class="contact-card-label" data-i18n="c_ig_label">Instagram</div>
-        <a href="https://instagram.com/ntek.facade" target="_blank" class="contact-card-value">@ntek.facade</a>
-        <div class="contact-card-sub" data-i18n="c_ig_sub">Проекты и новинки</div>
+        <div class="contact-card-body">
+          <div class="contact-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><defs><radialGradient id="ig-rg" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect x="1.5" y="1.5" width="21" height="21" rx="6" ry="6" fill="url(#ig-rg)"/><circle cx="12" cy="12" r="5.2" fill="none" stroke="white" stroke-width="1.8"/><circle cx="17.8" cy="6.2" r="1.3" fill="white"/></svg></div>
+          <div class="contact-card-label" data-i18n="c_ig_label">Instagram</div>
+          <a href="https://instagram.com/ntek.facade" target="_blank" class="contact-card-value">@ntek.facade</a>
+          <div class="contact-card-sub" data-i18n="c_ig_sub">Проекты и новинки</div>
+        </div>
+        <a href="https://instagram.com/ntek.facade" target="_blank" class="contact-btn" data-i18n="c_ig_btn">Подписаться</a>
       </div>
       <div class="contact-card">
-        <div class="contact-card-icon">📍</div>
-        <div class="contact-card-label" data-i18n="c_addr_label">Адрес офиса</div>
-        <a href="https://2gis.kg/bishkek/firm/70000001019341726?m=74.592188%2C42.87945%2F16" target="_blank" class="contact-card-value" data-i18n="c_addr_val">Исанова 119</a>
-        <div class="contact-card-sub" data-i18n="c_addr_sub">Бишкек, Кыргызстан</div>
+        <div class="contact-card-body">
+          <div class="contact-card-icon">📍</div>
+          <div class="contact-card-label" data-i18n="c_addr_label">Адрес офиса</div>
+          <a href="https://2gis.kg/bishkek/firm/70000001019341726?m=74.592188%2C42.87945%2F16" target="_blank" class="contact-card-value" data-i18n="c_addr_val">Исанова 119</a>
+          <div class="contact-card-sub" data-i18n="c_addr_sub">Бишкек, Кыргызстан</div>
+        </div>
+        <a href="https://2gis.kg/bishkek/firm/70000001019341726?m=74.592188%2C42.87945%2F16" target="_blank" class="contact-btn" data-i18n="c_addr_btn">Проложить маршрут</a>
       </div>
     </div>
   </div>
