@@ -354,6 +354,9 @@ T = {
         "facade_s6d": "Двусторонняя лента + полиуретановый клей Kalekim на полке",
         "facade_s7": "Панели Kalesinterflex",
         "facade_s7d": "3 мм · Прижимаются к профилю, лента удерживает до отверждения клея",
+        "portfolio_lbl": "Наши объекты",
+        "portfolio_h2": "Портфолио проектов",
+        "portfolio_sub": "Реализованные фасадные проекты с применением Kalesinterflex",
     },
     "en": {
         "page_title": "NTEK — Official Kalesinterflex Distributor in Kyrgyzstan",
@@ -486,6 +489,9 @@ T = {
         "facade_s6d": "Double-sided tape + Kalekim PU adhesive bead on flange",
         "facade_s7": "Kalesinterflex Panels",
         "facade_s7d": "3 mm · Pressed to profile — tape grabs instantly while adhesive cures",
+        "portfolio_lbl": "Our Projects",
+        "portfolio_h2": "Project Portfolio",
+        "portfolio_sub": "Completed facade projects featuring Kalesinterflex",
     },
     "ky": {
         "page_title": "NTEK — Кыргызстандагы Kalesinterflex расмий дистрибьютору",
@@ -618,10 +624,21 @@ T = {
         "facade_s6d": "Эки тараптуу лента + Kalekim PU желим фланцтын четине",
         "facade_s7": "Kalesinterflex панелдери",
         "facade_s7d": "3 мм · Профилге каратылат — лента дароо кармайт",
+        "portfolio_lbl": "Биздин объекттер",
+        "portfolio_h2": "Долбоорлордун портфолиосу",
+        "portfolio_sub": "Kalesinterflex колдонулган аяктаган фасад долбоорлору",
     }
 }
 
 T_json = json.dumps(T, ensure_ascii=False)
+
+import pickle as _pickle
+with open('/tmp/portfolio_new.pkl', 'rb') as _f:
+    _portfolio_gallery = _pickle.load(_f)
+_GAL_ITEMS_JS = 'const GAL_ITEMS=[' + ','.join(
+    '{src:"data:image/jpeg;base64,' + g['b64'] + '",label:' + json.dumps(g['label'], ensure_ascii=False) + '}'
+    for g in _portfolio_gallery
+) + ']'
 
 # ── Slab 3D section ─────────────────────────────────────────────────────────
 # CSS and JS kept as plain strings (no f-string) to avoid brace-escaping issues
@@ -1173,6 +1190,45 @@ new ResizeObserver(()=>{
 </script>
 """
 
+PORTFOLIO_CSS = """
+/* ── PORTFOLIO GALLERY ── */
+.portfolio-sec{padding:96px 5%;background:#0a0a0a}
+.portfolio-inner{max-width:1440px;margin:0 auto}
+.portfolio-sec .sec-h2{color:#fff}
+.portfolio-sec .sec-sub{color:rgba(255,255,255,.55)}
+.portfolio-sec .sec-lbl{color:#c4a882}
+.portfolio-sec .sec-lbl::before,.portfolio-sec .sec-lbl::after{background:#c4a882}
+.portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:48px}
+.pg-item{position:relative;overflow:hidden;cursor:default;background:#111;aspect-ratio:16/9}
+.pg-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s cubic-bezier(.25,.46,.45,.94),filter .35s}
+.pg-item:hover img{transform:scale(1.06);filter:brightness(.6)}
+.pg-caption{position:absolute;inset:0;display:flex;align-items:flex-end;padding:0 16px 14px;background:linear-gradient(transparent 40%,rgba(0,0,0,.78));color:#fff;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-family:'Inter',sans-serif;opacity:0;transition:opacity .3s}
+.pg-item:hover .pg-caption{opacity:1}
+@media(max-width:900px){.portfolio-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.portfolio-grid{grid-template-columns:repeat(2,1fr)}}
+"""
+
+PORTFOLIO_JS_TEMPLATE = """
+<script>
+(function(){
+GAL_ITEMS_PLACEHOLDER
+const grid = document.getElementById('portfolioGrid');
+GAL_ITEMS.forEach((item, i) => {
+  const card = document.createElement('div');
+  card.className = 'pg-item';
+  const img = document.createElement('img');
+  img.src = item.src; img.alt = item.label; img.loading = 'lazy';
+  const cap = document.createElement('div');
+  cap.className = 'pg-caption';
+  cap.textContent = item.label;
+  card.append(img, cap);
+  grid.appendChild(card);
+});
+})();
+</script>
+"""
+PORTFOLIO_JS = PORTFOLIO_JS_TEMPLATE.replace('GAL_ITEMS_PLACEHOLDER', _GAL_ITEMS_JS)
+
 _local = [(p['dl'], p['img']) for p in products if p['img'].startswith('data:')]
 local_css = '\n'.join(
     f'.li-{dl}{{background-image:url("{img}")}}'
@@ -1399,6 +1455,7 @@ footer{{background:var(--dark);padding:72px 5% 36px}}
 {SLAB_CSS}
 {ARNET_CSS}
 {FACADE_CSS}
+{PORTFOLIO_CSS}
 {local_css}
 </style>
 </head>
@@ -1597,6 +1654,17 @@ footer{{background:var(--dark);padding:72px 5% 36px}}
         <button class="facade-btn" id="facadeNext" data-i18n="facade_next">Далее →</button>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="portfolio-sec" id="portfolio">
+  <div class="portfolio-inner">
+    <div class="sec-head fi">
+      <p class="sec-lbl" data-i18n="portfolio_lbl">Наши объекты</p>
+      <h2 class="sec-h2" data-i18n="portfolio_h2">Портфолио проектов</h2>
+      <p class="sec-sub" data-i18n="portfolio_sub">Реализованные фасадные проекты с применением Kalesinterflex</p>
+    </div>
+    <div class="portfolio-grid fi" id="portfolioGrid"></div>
   </div>
 </section>
 
@@ -1821,6 +1889,7 @@ fi.forEach(el => io.observe(el));
 </script>
 {SLAB_JS}
 {FACADE_JS}
+{PORTFOLIO_JS}
 </body>
 </html>'''
 
