@@ -1432,25 +1432,69 @@ footer{{background:var(--dark);padding:72px 5% 36px}}
 
 .sep{{border:none;border-top:1px solid var(--border)}}
 
+/* ── HAMBURGER & MOBILE MENU ── */
+.nav-burger{{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:6px;z-index:300;width:36px;height:36px}}
+.nav-burger span{{display:block;width:22px;height:1.5px;background:#fff;transition:all .3s;transform-origin:center}}
+.nav-burger.open span:nth-child(1){{transform:translateY(6.5px) rotate(45deg)}}
+.nav-burger.open span:nth-child(2){{opacity:0}}
+.nav-burger.open span:nth-child(3){{transform:translateY(-6.5px) rotate(-45deg)}}
+.mobile-menu{{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:rgba(10,10,10,.98);backdrop-filter:blur(20px);z-index:199;padding:40px 8%;flex-direction:column;overflow-y:auto}}
+.mobile-menu.open{{display:flex}}
+.mobile-menu ul{{list-style:none;display:flex;flex-direction:column;gap:8px}}
+.mobile-menu ul a{{font-size:28px;font-weight:300;color:rgba(255,255,255,.85);text-decoration:none;letter-spacing:.02em;display:block;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.07);transition:color .2s}}
+.mobile-menu ul a:hover{{color:#c4a882}}
+
+/* ── TABLET (≤1100px) ── */
 @media(max-width:1100px){{
   .about{{grid-template-columns:1fr;gap:48px}}
   .img-grid{{grid-template-rows:220px 220px}}
   .ft-top{{grid-template-columns:1fr 1fr;gap:40px}}
+  .contacts-grid{{grid-template-columns:1fr 1fr}}
 }}
+
+/* ── MOBILE (≤768px) ── */
 @media(max-width:768px){{
   .nav-links{{display:none}}
   .nav-tag{{display:none}}
+  .nav-burger{{display:flex}}
   .strip{{grid-template-columns:1fr 1fr}}
-  .hero-bottom{{gap:20px}}
-  .hero-stat-n{{font-size:18px}}
+  .hero{{max-height:none;min-height:100svh}}
+  .hero-content{{padding:0 6%}}
+  .hero-bottom{{gap:16px;flex-wrap:wrap;padding:20px 6%}}
+  .hero-stat-n{{font-size:17px}}
+  .hero-cta{{flex-direction:column;gap:10px}}
+  .hero-cta a{{text-align:center;justify-content:center}}
+  .about{{padding:72px 6%}}
+  .about-specs{{grid-template-columns:1fr 1fr}}
+  .collections{{padding:72px 6%}}
   .grid{{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}}
-  .ft-top{{grid-template-columns:1fr}}
+  .contacts{{padding:72px 6%}}
+  .contacts-grid{{grid-template-columns:1fr 1fr;gap:16px}}
+  .contact-card{{padding:24px 20px}}
+  .ft-top{{grid-template-columns:1fr;gap:32px}}
   .ft-bottom{{flex-direction:column;gap:10px;text-align:center}}
+  .portfolio-sec{{padding:72px 4%}}
+  .sec-head{{margin-bottom:40px}}
 }}
+
+/* ── SMALL MOBILE (≤480px) ── */
 @media(max-width:480px){{
-  .grid{{grid-template-columns:1fr 1fr;gap:10px}}
+  .nav-logo img{{height:36px}}
+  .strip{{grid-template-columns:1fr}}
+  .strip-item{{border-right:none;border-bottom:1px solid rgba(255,255,255,.07)}}
+  .strip-item:last-child{{border-bottom:none}}
   .hero-eyebrow{{font-size:10px}}
-  .hero-stat-n{{font-size:16px}}
+  .hero-stat-n{{font-size:15px}}
+  .hero-stat-l{{font-size:9px}}
+  .hero-bottom{{gap:12px}}
+  .hero-sep{{display:none}}
+  .about-specs{{grid-template-columns:1fr 1fr}}
+  .grid{{grid-template-columns:1fr 1fr;gap:10px}}
+  .contacts-grid{{grid-template-columns:1fr}}
+  .contact-card{{padding:20px 16px}}
+  .filters{{gap:4px}}
+  .ftab{{padding:8px 14px;font-size:10.5px}}
+  .portfolio-grid{{grid-template-columns:1fr 1fr;gap:3px}}
 }}
 {SLAB_CSS}
 {ARNET_CSS}
@@ -1479,8 +1523,24 @@ footer{{background:var(--dark);padding:72px 5% 36px}}
         <button class="lb" onclick="setLang('ky')">КЫ</button>
       </div>
     </div>
+    <button class="nav-burger" id="navBurger" aria-label="Menu" onclick="document.getElementById('mobileMenu').classList.toggle('open');this.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#about" data-i18n="nav_about" onclick="document.getElementById('mobileMenu').classList.remove('open');document.getElementById('navBurger').classList.remove('open')">О материале</a></li>
+    <li><a href="#portfolio" onclick="document.getElementById('mobileMenu').classList.remove('open');document.getElementById('navBurger').classList.remove('open')">Портфолио</a></li>
+    <li><a href="#collections" data-i18n="nav_collections" onclick="document.getElementById('mobileMenu').classList.remove('open');document.getElementById('navBurger').classList.remove('open')">Коллекции</a></li>
+    <li><a href="#contacts" data-i18n="nav_contacts" onclick="document.getElementById('mobileMenu').classList.remove('open');document.getElementById('navBurger').classList.remove('open')">Контакты</a></li>
+  </ul>
+  <div class="lang-sw" style="margin-top:24px">
+    <button class="lb on" onclick="setLang('ru')">RU</button>
+    <button class="lb" onclick="setLang('en')">EN</button>
+    <button class="lb" onclick="setLang('ky')">КЫ</button>
+  </div>
+</div>
 
 <section class="hero" id="top">
   <div class="hero-mosaic" aria-hidden="true">
