@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kalekim Technobond — клей для Kalesinterflex | NTEK</title>
+<meta name="description" content="Kalekim 1401 PU Technobond и 1405 MS 50 Technobond — профессиональные клеевые составы для монтажа крупноформатных фасадных панелей Kalesinterflex.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--gold:#c9a06e;--gold-dim:rgba(201,160,110,.25);--gold-bg:rgba(201,160,110,.07);
+--bg:#0e0e0e;--surface:#141414;--surface2:#1c1c1c;
+--border:rgba(255,255,255,.07);--border2:rgba(255,255,255,.12);
+--text:#f0ede8;--text-dim:rgba(240,237,232,.92);--text-muted:rgba(240,237,232,.75);
+--fb:'Jost',sans-serif;
+--ease-out:cubic-bezier(.22,.61,.36,1);
+}
+html{font-size:16px;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--fb);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:rgba(14,14,14,.95);
+backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+border-bottom:1px solid var(--border);height:60px;
+padding:0 5%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-size:17px;font-weight:700;letter-spacing:.04em}
+.nav-back{display:flex;align-items:center;gap:7px;font-size:11px;font-weight:500;
+letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);
+transition:color .2s;cursor:pointer}
+.nav-back:hover{color:var(--gold)}
+.nav-back svg{width:14px;height:14px}
+
+/* HERO */
+.page-hero{padding:80px 5% 64px;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;
+background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(201,160,110,.05) 0%,transparent 70%);
+pointer-events:none}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;
+letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+.hero-tag::before{content:'';width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0}
+.hero-h1{font-size:clamp(28px,4vw,52px);font-weight:700;
+line-height:1.1;margin-bottom:20px;max-width:720px;letter-spacing:-.01em}
+.hero-h1 .accent{color:var(--gold)}
+.hero-sub{font-size:17px;font-weight:300;color:var(--text-dim);max-width:560px;line-height:1.75;margin-bottom:32px}
+.hero-products{display:flex;gap:12px;flex-wrap:wrap}
+.hero-prod-tag{font-size:12px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+color:var(--text-muted);padding:7px 16px;border:1px solid var(--border2);background:var(--surface)}
+
+/* PRODUCT SECTIONS */
+.sec-wrap{max-width:1100px;margin:0 auto;padding:0 5%}
+.prod-section{padding:80px 0;border-bottom:1px solid var(--border)}
+.prod-section:last-child{border-bottom:none}
+
+/* PRODUCT HEADER */
+.prod-header{display:flex;align-items:flex-start;gap:32px;margin-bottom:48px}
+.prod-num{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+color:var(--gold);background:var(--gold-bg);border:1px solid var(--gold-dim);
+padding:6px 16px;flex-shrink:0;margin-top:4px}
+.prod-label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+color:var(--text-muted);margin-bottom:8px}
+.prod-h2{font-size:clamp(24px,3vw,38px);font-weight:700;line-height:1.1;
+letter-spacing:-.01em;margin-bottom:6px}
+.prod-h2 .accent{color:var(--gold)}
+.prod-type{font-size:13px;font-weight:400;letter-spacing:.03em;color:var(--text-muted)}
+
+/* CONTENT GRID */
+.prod-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-bottom:40px}
+.prod-desc{font-size:16px;font-weight:300;color:var(--text-dim);line-height:1.85;margin-bottom:16px}
+.prod-desc:last-child{margin-bottom:0}
+
+/* SPECS */
+.spec-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.spec-card{background:var(--surface);border:1px solid var(--border);padding:20px 22px}
+.spec-val{font-size:clamp(20px,2.2vw,28px);font-weight:700;color:var(--gold);
+line-height:1;margin-bottom:5px}
+.spec-lbl{font-size:11px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;
+color:var(--text-muted)}
+
+/* HIGHLIGHTS */
+.highlights{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.hl-item{background:var(--surface);border:1px solid var(--border);
+border-left:2px solid var(--gold);padding:20px 24px}
+.hl-title{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+color:var(--gold);margin-bottom:8px}
+.hl-body{font-size:14px;font-weight:300;color:var(--text-dim);line-height:1.65}
+
+/* BOTTOM CTA */
+.page-foot{padding:72px 5%;text-align:center;border-top:1px solid var(--border)}
+.foot-h{font-size:clamp(20px,2.8vw,32px);font-weight:600;margin-bottom:12px;letter-spacing:-.01em}
+.foot-h .accent{color:var(--gold)}
+.foot-sub{font-size:15px;font-weight:300;color:var(--text-dim);margin-bottom:32px}
+.btn-gold{display:inline-flex;align-items:center;gap:10px;padding:14px 34px;
+background:var(--gold);color:#060606;font-size:11px;font-weight:700;
+letter-spacing:.12em;text-transform:uppercase;border:none;cursor:pointer;
+font-family:var(--fb);transition:background .2s,transform .12s}
+.btn-gold:hover{background:#d4b07e;transform:translateY(-1px)}
+
+/* SCROLL REVEAL */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s var(--ease-out),transform .6s var(--ease-out)}
+.reveal.vis{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.18s}.d3{transition-delay:.28s}.d4{transition-delay:.38s}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.prod-grid,.spec-grid,.highlights{grid-template-columns:1fr}
+.prod-header{flex-direction:column;gap:16px}
+.page-hero{padding:56px 5% 48px}
+.prod-section{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <span class="nav-logo">nteK</span>
+  <a href="index.html#about" class="nav-back" onclick="sessionStorage.setItem('ntekSkipIntro','1')">
+    <svg viewBox="0 0 14 14" fill="none"><path d="M10 7H2M6 3l-4 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    К материалу
+  </a>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-tag reveal">Монтажный клей · Kalekim</div>
+  <h1 class="hero-h1 reveal d1">Technobond — <span class="accent">профессиональный клей</span> для Kalesinterflex</h1>
+  <p class="hero-sub reveal d2">Два состава, разработанных специально для монтажа крупноформатных керамических фасадных панелей. Рекомендованы Kale Group как единственно совместимые с Kalesinterflex.</p>
+  <div class="hero-products reveal d3">
+    <span class="hero-prod-tag">1401 PU Technobond</span>
+    <span class="hero-prod-tag">1405 MS 50 Technobond</span>
+  </div>
+</section>
+
+<div class="sec-wrap">
+
+  <!-- PRODUCT 1: 1401 PU Technobond -->
+  <section class="prod-section">
+    <div class="prod-header reveal">
+      <div class="prod-num">01</div>
+      <div>
+        <div class="prod-label">Полиуретановый клей</div>
+        <h2 class="prod-h2">Kalekim <span class="accent">1401 PU Technobond</span></h2>
+        <div class="prod-type">Однокомпонентный · Полиуретановая база · Класс C2TE S2</div>
+      </div>
+    </div>
+
+    <div class="prod-grid">
+      <div>
+        <p class="prod-desc reveal">Однокомпонентный полиуретановый клей, не требующий смешивания. Реагирует с влагой воздуха и создаёт исключительно прочное сцепление с непористой поверхностью керамических панелей Kalesinterflex.</p>
+        <p class="prod-desc reveal d1">Полиуретановая основа обеспечивает высокую эластичность готового шва — клеевой слой выдерживает температурные деформации фасада без растрескивания и отслоения. Оптимален для регионов с резкими перепадами температур.</p>
+        <p class="prod-desc reveal d2">Не содержит растворителей. Наносится пистолетом — точный контроль дозировки, минимальный расход материала на объекте.</p>
+      </div>
+      <div>
+        <div class="spec-grid reveal">
+          <div class="spec-card">
+            <div class="spec-val">C2TE S2</div>
+            <div class="spec-lbl">Класс по EN 12004</div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-val">&gt;2 МПа</div>
+            <div class="spec-lbl">Адгезия на отрыв</div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-val">&gt;5 мм</div>
+            <div class="spec-lbl">Деформация S2</div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-val">2–3 ч</div>
+            <div class="spec-lbl">Время схватывания</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="highlights">
+      <div class="hl-item reveal">
+        <div class="hl-title">Эластичность</div>
+        <div class="hl-body">Полиуретановый шов работает как амортизатор — поглощает термические деформации фасада и вибрацию без разрушения сцепления.</div>
+      </div>
+      <div class="hl-item reveal d1">
+        <div class="hl-title">Непористые поверхности</div>
+        <div class="hl-body">Разработан специально для непористой тыльной стороны керамики. Обычный плиточный клей с такими поверхностями не работает.</div>
+      </div>
+      <div class="hl-item reveal d2">
+        <div class="hl-title">Однокомпонентный</div>
+        <div class="hl-body">Готов к применению без смешивания. Исключает ошибки дозировки и экономит время на объекте.</div>
+      </div>
+      <div class="hl-item reveal d3">
+        <div class="hl-title">Высотный монтаж</div>
+        <div class="hl-body">Быстрое начальное схватывание предотвращает сползание тяжёлых панелей (до 30 кг) сразу после установки.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT 2: 1405 MS 50 Technobond -->
+  <section class="prod-section">
+    <div class="prod-header reveal">
+      <div class="prod-num">02</div>
+      <div>
+        <div class="prod-label">MS-полимерный клей</div>
+        <h2 class="prod-h2">Kalekim <span class="accent">1405 MS 50 Technobond</span></h2>
+        <div class="prod-type">Однокомпонентный · MS-полимерная база · 50% сухого остатка</div>
+      </div>
+    </div>
+
+    <div class="prod-grid">
+      <div>
+        <p class="prod-desc reveal">MS-полимерный состав с 50% содержанием сухого остатка. Совмещает преимущества полиуретана и силикона: высокую начальную адгезию и долгосрочную гибкость — без изоцианатов, безопасен для работы без специальных средств защиты органов дыхания.</p>
+        <p class="prod-desc reveal d1">Устойчив к УФ-излучению, атмосферным осадкам и перепадам температур от −40 °C до +100 °C. Клеевой слой не желтеет и не теряет свойств на протяжении всего срока службы фасада.</p>
+        <p class="prod-desc reveal d2">Идеален для крупноформатных панелей с большой площадью и весом, а также для фасадов с повышенными требованиями к долговечности в условиях агрессивной городской среды.</p>
+      </div>
+      <div>
+        <div class="spec-grid reveal">
+          <div class="spec-card">
+            <div class="spec-val">C2TE S2</div>
+            <div class="spec-lbl">Класс по EN 12004</div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-val">50%</div>
+            <div class="spec-lbl">Сухой остаток</div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-val">−40/+100°C</div>
+            <div class="spec-lbl">Диапазон температур</div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-val">УФ+</div>
+            <div class="spec-lbl">Устойчивость к излучению</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="highlights">
+      <div class="hl-item reveal">
+        <div class="hl-title">УФ-стабильность</div>
+        <div class="hl-body">Не желтеет и не деградирует под прямым солнечным излучением. Сохраняет адгезию и цвет на весь срок службы фасада.</div>
+      </div>
+      <div class="hl-item reveal d1">
+        <div class="hl-title">Без изоцианатов</div>
+        <div class="hl-body">MS-полимерная база безопасна для монтажников — работа без специальных средств защиты дыхания, в отличие от обычных PU-составов.</div>
+      </div>
+      <div class="hl-item reveal d2">
+        <div class="hl-title">Экстремальный диапазон</div>
+        <div class="hl-body">Сохраняет эластичность от −40 °C до +100 °C. Стабилен в условиях резкоконтинентального климата Центральной Азии.</div>
+      </div>
+      <div class="hl-item reveal d3">
+        <div class="hl-title">Крупный формат</div>
+        <div class="hl-body">50% сухого остатка обеспечивает надёжную фиксацию плит максимального формата 3000×1000 мм при минимальной усадке шва.</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="page-foot reveal">
+  <h2 class="foot-h">Вернуться к <span class="accent">Kalesinterflex</span></h2>
+  <p class="foot-sub">Изучите полный каталог коллекций или свяжитесь с нами для консультации по выбору состава</p>
+  <a href="index.html" class="btn-gold" onclick="sessionStorage.setItem('ntekSkipIntro','1')">На главную</a>
+</div>
+
+<script>
+(function(){
+const els=document.querySelectorAll('.reveal');
+const io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target);}});
+},{threshold:0.1});
+els.forEach(function(el){io.observe(el);});
+})();
+</script>
+
+</body>
+</html>
